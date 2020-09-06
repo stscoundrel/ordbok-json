@@ -20,6 +20,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "fix": "eslint . --fix"
+    "fix": "eslint . --fix",
+    "create-json": "node create-json.js"
   }
 }
