@@ -14,6 +14,23 @@ To get latest dataset from online source, run in project:
 
 `yarn create-json`
 
+### Use JSON files programmatically
+
+Repo is shipped with files & getters for them. 
+
+```javascript
+const { getEnglish, getOldNorse } = require('ordbok-json')
+
+const englishWords  = getEnglish()
+const oldNorseWords = getOldNorse()
+
+// Get words starting with letter U
+const startsWithU = oldNorseWords.filter(entry => entry.word.charAt(0) === 'u' )
+
+console.log(startsWithU)
+
+```
+
 
 ### Sources
 
