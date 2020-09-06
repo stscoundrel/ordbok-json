@@ -1,0 +1,25 @@
+{
+  "name": "ordbok-json",
+  "version": "0.9.0",
+  "description": "JSON backup of the Orðbók Old Norse dictionary.",
+  "main": "index.js",
+  "repository": "https://github.com/stscoundrel/ordbok-json.git",
+  "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "old-norse-ordbok": "^0.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "fix": "eslint . --fix"
+  }
+}
