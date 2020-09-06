@@ -1,15 +1,29 @@
-const { oldNorseToEnglish, englishToOldNorse } = require('old-norse-ordbok')
-const fs = require('fs')
-const path = require('path')
+const dictionary = require('./services/dictionary.js')
+const { write } = require('./services/writer.js')
+const { read } = require('./services/reader.js')
+const { ENGLISH_JSON, OLD_NORSE_JSON } = require('./constants/paths')
 
 const toJson = async () => {
-  const oldNorse = await oldNorseToEnglish()
-  const english = await englishToOldNorse()
+  const { oldNorse, english } = await dictionary.getAll()
 
-  fs.writeFileSync(path.join(`${__dirname}/../json/oldNorseToEnglish.json`), JSON.stringify(oldNorse))
-  fs.writeFileSync(path.join(`${__dirname}/../json/englishToOldNorse.json`), JSON.stringify(english))
+  write(oldNorse, OLD_NORSE_JSON)
+  write(english, ENGLISH_JSON)
+}
+
+const getEnglish = () => {
+  const words = read(ENGLISH_JSON)
+
+  return words
+}
+
+const getOldNorse = () => {
+  const words = read(OLD_NORSE_JSON)
+
+  return words
 }
 
 module.exports = {
   toJson,
+  getEnglish,
+  getOldNorse,
 }
