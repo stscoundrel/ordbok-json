@@ -8,6 +8,13 @@ JSON backup of the [Orðbók Old Norse dictionary](https://github.com/stscoundre
 
 Or just copy json files from `/json` folder in source.
 
+### Update
+
+To get latest dataset from online source, run in project:
+
+`yarn create-json`
+
+
 ### Sources
 
 Scraped from word list compiled by [Vikings of Bjornstad](https://www.vikingsofbjornstad.com/Old_Norse_Dictionary_E2N.shtm). The sources for the compiled list come from:
