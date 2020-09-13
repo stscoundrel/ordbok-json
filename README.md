@@ -2,6 +2,8 @@
 
 JSON backup of the [Orðbók Old Norse dictionary](https://github.com/stscoundrel/old-norse-ordbok) dataset. In case the original source becomes unavailable.
 
+Can also be used as data source in itself, if you're happy with using filesystem.
+
 ### Install
 
 `yarn add ordbok-json`
