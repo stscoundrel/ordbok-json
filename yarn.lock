@@ -933,10 +933,10 @@ object.values@^1.1.1:
     function-bind "^1.1.1"
     has "^1.0.3"
 
-old-norse-ordbok@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/old-norse-ordbok/-/old-norse-ordbok-1.0.0.tgz#1aee88de5321299db04fe01eed73c61f857fa85e"
-  integrity sha512-qBVu7rVFLRu04APkFbGhT4LHG/mBbdvDgX/bPtkd0svc7gEG5dtbLF/c2GuBpJU34r/BtuSQc1mcxNQAmEGMvA==
+old-norse-ordbok@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/old-norse-ordbok/-/old-norse-ordbok-1.0.1.tgz#295be269e24d6b60ce89568c180d85ab2b8d11b4"
+  integrity sha512-cwm4ixD1GbnO2TxC6QN9/GB3eCiNiQuYTY8hf6vDXrVgXeMP6KxJnv6CW/dkNXLSJiKy9mqC7Qwou4x5lBI7dg==
   dependencies:
     puppeteer "^5.2.1"
 
