@@ -29,7 +29,15 @@ const oldNorseWords = getOldNorse()
 // Get words starting with letter U
 const startsWithU = oldNorseWords.filter(entry => entry.word.charAt(0) === 'u' )
 
+// Get words associated with Old East Norse branch.
+const oenWords = oldNorseWords.filter(entry => entry.branch === 'Old East Norse' )
+
+// Get adjectives.
+const adjectives = oldNorseWords.filter(entry => entry.type === 'Adjective' )
+
 console.log(startsWithU)
+console.log(oenWords)
+console.log(adjectives)
 
 ```
 
